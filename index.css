@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+body {
+    font-family: "Hanken Grotesk";
+    --light-lavender: hsl(241, 100%, 89%);
+    --light-slate-blue: hsl(252, 100%, 67%);
+    --light-royal-blue: hsl(241, 81%, 54%);
+    --violet-blue: hsla(256, 72%, 46%, 1);
+    --persian-blue: hsla(241, 72%, 46%, 0);
+    --dark-gray-blue: hsl(224, 30%, 27%);
+    color: var(--light-lavender);
+    display: grid;
+    place-items: center;
+    height: 50em;
+}
+
+.score {
+    max-width: 25em;
+
+}
+
+.results {
+    text-align: center;
+    background-image: radial-gradient(var(--light-royal-blue), var(--light-slate-blue));
+    border-radius: 0 0 1em 1em;
+    padding: 2em;
+}
+
+.great {
+    color: white;
+    margin-top: 1em;
+}
+
+.para {
+    padding: 0 2em;
+}
+
+.circle {
+    background-image: radial-gradient(var(--violet-blue), var(--persian-blue));
+    border-radius: 50%;
+    width: 10em;
+    aspect-ratio: 1/1;
+    margin: auto;
+    display: grid;
+    place-items: center;
+}
+
+.circle p {
+    color: white;
+    font-size: 48px;
+    font-weight: 700;
+    margin: 0;
+    padding-top: 0.5em;
+}
+
+.summary {
+    color: black;
+    /* border: 2px solid black; */
+    padding: 1em;
+}
+
+.container {
+    width: 100%;
+    height: 2em;
+    display: flex;
+    justify-content: space-around;
+    margin: 1em 0;
+    /* border: 2px solid black; */
+}
+
+.reaction {
+    background-image: radial-gradient(white, hsla(0, 100%, 67%, 0.1));
+    border-radius: 1em;
+    padding: 0.5em 0;
+}
+
+.reaction-label {
+    color: hsl(0, 100%, 67%);
+
+}
+
+.memory {
+    background-image: radial-gradient(white, hsla(39, 100%, 56%, 0.1));
+    border-radius: 1em;
+    padding: 0.5em 0;
+}
+
+.memory-label {
+    color: hsl(39, 100%, 56%);
+}
+
+.verbal {
+    background-image: radial-gradient(white, hsla(166, 100%, 37%, 0.1));
+    border-radius: 1em;
+    padding: 0.5em 0;
+}
+
+.verbal-label {
+    color: hsl(166, 100%, 37%);
+}
+
+.visual {
+    background-image: radial-gradient(white, hsla(234, 85%, 45%, 0.1));
+    border-radius: 1em;
+    padding: 0.5em 0;
+}
+
+.visual-label {
+    color: hsl(234, 85%, 45%);
+}
+
+.reaction-icon,
+.memory-icon,
+.verbal-icon,
+.visual-icon {
+    vertical-align: sub;
+}
+
+.special-num {
+    color: gray;
+}
+
+button {
+    width: 100%;
+    padding: 0.5em;
+    font-size: 24px;
+    border-radius: 1.5em;
+    color: white;
+    outline: none;
+    border: none;
+    background: hsl(224, 30%, 27%);
+    margin: 0.5em 0;
+}
+
+@media screen and (min-width:600px) {
+    .score {
+        display: flex;
+        justify-content: center;
+    }
+
+    .results {
+        min-width: 15em;
+        border-radius: 1em;
+    }
+
+    .summary {
+        min-width: 20em;
+    }
+
+    button {
+        width: 50%;
+        display: block;
+        margin: auto;
+    }
+}
